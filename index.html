@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>Tecnology</title>
+    <style>
+        /* navbar-start */
+        #navbar{
+            display: flex;
+            height: 50px;
+            
+        }
+        .nav-c{
+            display: flex;
+            text-decoration: none;
+            margin-left: 18px;
+            padding: 2px;
+            list-style: none;
+            background-color: black;
+            color: rgb(218, 223, 227);
+            font-size: 22px;
+            align-items: center;
+            font-family: baluoo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-content: space-evenly;
+            width: 90%;
+            /* position: fixed;
+            top:4px;
+            left:1px; */
+        }
+
+        .nav-c a{
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+        /* #nav-b{
+            display: flex;
+            z-index: -1;
+
+        } */
+        .nav-c a:hover{
+            background-color: black;
+            color: rgb(164, 167, 170);
+        }
+        #nav-a{
+            height: 50px;
+            width: 40px;
+        }
+        #nav-a img{
+            height: 68px;
+            width: 68px;
+        }
+        #navbar::before{
+            content: "";
+            background:url('img/b i3.jpg') ;
+            z-index: -1;
+            opacity: 0.8;
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            height: 100%;
+            width: 100%;
+        }
+        /* navbar-End*/
+
+
+        /* section1-start */
+        #section1{
+            display: flex;
+            justify-content: space-around;
+        }
+        #section h5{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            margin: 2px;
+        }
+        #section p{
+            display: flex;
+            font-size: 25px;
+            justify-content: center;
+        }
+        /* section1-end */
+
+
+
+        /* section2-start */
+        #section2{
+            display: flex;
+            justify-content: space-around;
+        }
+        .box{
+            height: 350px;
+            width: 200px;
+            /* border: 2px solid black; */
+            margin-top: 40px;
+            text-decoration: none;
+            margin-bottom: 94px;
+
+
+        }
+        .box img{
+            height: 300px;
+            width: 200px;
+        }
+        .box p{
+            font-size: 25px;
+            display: flex ;
+            justify-content: center;
+            /* border: 2px solid purple; */
+            background-color: black;
+            border-radius: 5px;
+            height: 35px;
+            color: aliceblue;
+            align-items: center;
+            margin: 0px 0px;
+        }
+        .box a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .box a:hover{
+            background-color: black;
+            color: rgb(142, 145, 148);
+        }
+        /* section2-End */
+
+        /* section-3-Start */
+        video.bg-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;        /* content ke peeche rahe */
+            object-fit: cover;  /* full screen fill kare */
+        }
+        .bg-video {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            top: 776px;
+            left: 0px;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 40px;
+        }
+
+        .bg-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #s3 p{
+            display: flex;
+            position: relative;
+            top: 5px;
+            left: 270px;
+            font-size: 48px;
+            background-color: black;
+            border: 2px solid black;
+            border-radius: 15px;
+            color: aliceblue;
+            width: 66%;
+            justify-content: center;
+        }
+        .d1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 195px;
+            left: -460px;
+        }
+        .d1c {
+            font-style: italic;
+            list-style: none;
+        }
+        #d1c-1{
+            margin-left: 10px;
+            border: 4px solid black;
+            color: black;
+            border-radius: 10px;
+            font-family: "Audiowide", sans-serif;
+            width: 100px;
+        }
+        #d1c-2{
+            color: rgb(251, 247, 247);
+            font-family: "Audiowide", sans-serif;
+            font-size: 35px;
+
+        }
+        
+        #d1c-4 a{
+            color: black;
+            background-color: aliceblue;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-family: "Audiowide", sans-serif;
+            font-size: 20px;
+            margin-top: 5px;
+            text-decoration: none;
+            width: 140px;
+        }
+        #d1c-4 a:hover{
+            color:aliceblue;
+            background-color:black;
+            
+        }
+        /* section-3-End */
+
+
+        /* section-4-start */
+
+        #section4{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .camra{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            margin-top: 600px;
+        }
+        #camra1::before{
+            display: flex;
+            background: url(img/sony-alpha.png)no-repeat center center/cover;
+            content: "";
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            z-index: -1;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            opacity: 0.8;
+        }
+        #camra2::before{
+            display: flex;
+            background: url(img/canonEos-R10.png)no-repeat center center/cover;
+            content: "";
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            z-index: -1;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            opacity: 0.8;
+        }
+        #camra3::before{
+            display: flex;
+            background: url(img/nikonZ8.png)no-repeat center center/cover;
+            content: "";
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            z-index: -1;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            opacity: 0.8;
+        }
+        #camra4::before{
+            display: flex;
+            background: url(img/fujifilmX-T5.png)no-repeat center center/cover;
+            content: "";
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            z-index: -1;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            opacity: 0.8;
+        }
+        #camra5::before{
+            display: flex;
+            background: url(img/lumix-G90.png)no-repeat center center/cover;
+            content: "";
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            z-index: -1;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            opacity: 0.8;
+        }
+        
+        .camra h3{
+            display: flex;
+            width: 170px;
+            border: 2px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            background-color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .camra a{
+            text-decoration: none;
+            color: white;
+        }
+        .camra a:hover{
+            color: rgb(10, 8, 8);
+        }
+        .camra h3:hover{
+            background-color:white ;
+        }
+        .camrat{
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: black;
+            color: aliceblue;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            position: relative;
+            bottom: 300px;
+            left: 0px;
+        }
+        .camrat h3{
+            font-size: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        
+        /* section-4-End */
+    </style>
+</head>
+<body>
+    <div>
+        <navbar id="navbar">
+            <div class="nav-c" id="nav-a">
+                <img src="img/logo i6.jpg" alt="Arsenal">
+            </div>
+            <div class="nav-c" id="nav-b">
+                <div class="nav" id="nav2">
+                    <a href="http://127.0.0.1:5500/html/mobail.html"> Home</a></div>
+                <div class="nav" id="nav3">
+                    <a href="https://www.pixbay.com">About</a></div>
+                <div class="nav" id="nav4"><a href="autoshopeindia.com">Up coming mobail</a></div>
+                <div class="nav" id="nav4">
+                    <a href="https://www.youtube.com">login</a></div>
+                <div class="nav" id="nav5">
+                    <input type="search" placeholder="search">
+                </div>
+            </div>
+        </navbar>
+
+
+
+        <section id="section">
+            <div class="s1">
+                <h5>Arsenal</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+            </div>
+        </section>
+
+
+
+        <section id="section2">
+            <div class="box" id="box2">
+                <img src="img/camrai2.png" alt="">
+                <P><a href="https://www.gopro.com"> Camra Info</a></P>
+            </div>
+            <div class="box" id="box3">
+                <img src="img/droni5.png" alt="">
+                <P><a href="https://www.dji.com">Drone Info </a></P>
+            </div>
+            <div class="box" id="box4">
+                <img src="img/tv.png" alt="">
+                <P><a href="https://gadgetsnow.indiatimes.com/television/filters/display_type=LED">T.V.  Info</a></P>
+            </div>
+            <div class="box" id="box5">
+                <img src="img/phonei7.png" alt="">
+                <P><a href="https://www.oppo.com"> Mobail Info</a></P>
+            </div>
+        </section>
+
+    </div>
+    <section id="s3">
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="a3.mp4" type="video/mp4">
+        </video>
+        <p>Dron</p>
+        <div class="d1">
+            <ul>
+                <li class="d1c" id="d1c-1">DJI Drone</li>
+                <li class="d1c" id="d1c-2">360 smooth rotated </li>
+                <li class="d1c" id="d1c-3">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                <li class="d1c" id="d1c-4"><a href="https://www.dji.com/global">Learn More</a></li>
+
+            </ul>
+        </div>       
+    </section>
+    <section id="section4">
+        <div class="camra" id="camra1" >
+            <h3 style="margin-top: 36px;"><a href="https://www.sony.co.in/electronics/camera-lenses/sel600f40gm?sku=sel600f40gm-j-syx">Sony-alpha 7M3K</a></h3>
+        </div>
+        <div class="camra" id="camra2">
+            <img src="" alt="">
+            <h3><a href="https://in.canon/en/consumer/eos-r10-rf-s18-150mm-f-3-5-6-3-is-stm/product">canon-Eos-R10</a></h3>
+        </div>
+        <div class="camra" id="camra3">
+            <img src="" alt="">
+            <h3><a href="https://reviews.oneclearwinner.com/product/nikon-z8-camera/?msclkid=bdfeaec914f417c626fac7da4c21cff1&utm_source=bing&utm_medium=cpc&utm_campaign=geo%3AWW%20%7C%20site%3AOCW_ssr_t3%20%7C%20type%3AKWs%20%7C%20category%3AAll&utm_term=nikon%20z8%20camera&utm_content=ad%20group16">nikon-Z8</a></h3>
+        </div>
+        <div class="camra" id="camra4">
+            <img src="" alt="">
+            <h3><a href="https://fujifilmxindia.com/all-products/camera/x-series/fujifilm-x-t5-mirrorless-camera/">fujifilmX-T5</a></h3>
+        </div>
+        <div class="camra" id="camra5">
+            <img src="" alt="">
+            <h3><a href="https://www.panasonic.com/uk/consumer/cameras-camcorders/lumix-mirrorless-cameras/lumix-g-cameras/dc-g90.html">lumix-G90</a></h3>
+        </div>
+
+    </section>
+    <div class="camrat">
+        <h3>Camra</h3>
+    </div>
+
+    
+</body>
+
+</html>
